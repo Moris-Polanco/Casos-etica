@@ -22,7 +22,7 @@ def casos(data):
             presence_penalty=0.8,
             stop=["###"])
 
-        return dict(response["choices"][0])["text"].replace("\n\n", "") , 200
+        return markdown(response["choices"][0])["text"].replace("\n\n", "") , 200
     except Exception as err:
         return {"Error": err}, 500
 
