@@ -2,9 +2,9 @@ import streamlit as st
 import gateway
 
 def header():
-    st.header('Generador de casos de ética')
-    st.markdown("##### Genera casos originales de ética.")
-    st.text('version 0 - Last update 08/08/2022')
+    st.header('Generador de casos de ética empresarial')
+    st.markdown("##### Genera casos originales de ética empresarial.")
+    st.text('version 0 - Last update 31/10/2022')
 
 def instert_text():
     txt = st.text_area("Ingrese palabras clave, separadas por coma y con punto al final.")
@@ -13,7 +13,7 @@ def instert_text():
     if colum1.button("Genere Caso"):
         with st.spinner(text='en progreso'):
             
-            new_txt, status = gateway.conect_gerador_casos_etica(txt)
+            new_txt, status = gateway.conect_casos(txt)
             status = 200
             
             if status == 200:
