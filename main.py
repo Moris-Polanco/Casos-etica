@@ -28,4 +28,4 @@ def insert_text():
 
 st.sidebar.markdown("# Generador de casos de ética ❄️")
 header()
-instert_text()
+insert_text()
