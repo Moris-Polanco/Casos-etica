@@ -4,7 +4,7 @@ import openai
 TOKEN = os.getenv("TOKEN")
 
 
-def conect_casos(data):
+def casos(data):
     
     openai.api_key = os.getenv("OPENAI_API_KEY")
 
