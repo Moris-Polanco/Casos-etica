@@ -28,7 +28,7 @@ def casos(data):
 
 
 def read_text_example():
-    f = open('texto.md', 'r')
+    f = open('texto.tx', 'r')
     content = f.read()
     print(content)
     return content
