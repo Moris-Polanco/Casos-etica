@@ -17,7 +17,7 @@ def insert_text():
             status = 200
             
             if status == 200:
-                st.text_area(label="Generador de casos de ética :", value=new_txt, height=250)
+                st.text_area(label="Generador de casos de ética :", value=new_txt, height=200)
                 st.success("Sucess!")  
             else:
                 st.text_area(label="Error:", value=new_txt["Error"])
