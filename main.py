@@ -6,14 +6,14 @@ def header():
     st.markdown("##### Genera casos originales de ética empresarial.")
     st.text('version 0 - Last update 31/10/2022')
 
-def instert_text():
+def insert_text():
     txt = st.text_area("Ingrese palabras clave, separadas por coma y con punto al final.")
     colum1, colum2,colum3,colum4,colum5 = st.columns([1,1,1,1,1])
 
     if colum1.button("Genere Caso"):
         with st.spinner(text='en progreso'):
             
-            new_txt, status = gateway.conect_casos(txt)
+            new_txt, status = gateway.casos(txt)
             status = 200
             
             if status == 200:
