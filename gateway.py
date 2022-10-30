@@ -13,7 +13,7 @@ def casos(data):
 
     try:
         response = openai.Completion.create(
-            model="davinci-instructuct-beta-v3",
+            model="text-davinci-002",
             prompt=prompt,
             temperature=1,
             max_tokens=659,
